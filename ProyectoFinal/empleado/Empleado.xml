@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tabla>
+ <registro>
+  <Nombre>Marcos</Nombre>
+  <Edad>12</Edad>
+  <FechaI>2023-05-31</FechaI>
+  <Puesto>Cajero</Puesto>
+ </registro>
+ <registro>
+  <Nombre>Yayo</Nombre>
+  <Edad>12</Edad>
+  <FechaI>2002-12-31</FechaI>
+  <Puesto>CEO</Puesto>
+ </registro>
+</tabla>

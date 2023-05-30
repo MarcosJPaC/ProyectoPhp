@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tabla>
+ <registro>
+  <Nombre>Marcos</Nombre>
+  <Precio>12.00</Precio>
+  <Stock>12</Stock>
+  <Srea>12</Srea>
+  <Marca>Fud</Marca>
+  <Vendedor>Brandon</Vendedor>
+  <Categoria>Si</Categoria>
+ </registro>
+</tabla>

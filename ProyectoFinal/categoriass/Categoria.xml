@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tabla>
+ <registro>
+  <Nombre>Alimentos</Nombre>
+  <Descripcion>Productos para el consumo </Descripcion>
+  <Abreviatura>ALM</Abreviatura>
+ </registro>
+</tabla>

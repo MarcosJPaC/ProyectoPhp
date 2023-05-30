@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tabla>
+ <registro>
+  <Fecha>2023-05-18</Fecha>
+  <Total>12.00</Total>
+  <UnidadesV>1</UnidadesV>
+  <Vendedor>yayo</Vendedor>
+  <nombreEmpleado>Marcos</nombreEmpleado>
+ </registro>
+ <registro>
+  <Fecha>2023-05-16</Fecha>
+  <Total>12.00</Total>
+  <UnidadesV>12</UnidadesV>
+  <Vendedor>Brandon</Vendedor>
+  <nombreEmpleado>Marcos</nombreEmpleado>
+ </registro>
+</tabla>
