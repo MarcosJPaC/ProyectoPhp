@@ -55,7 +55,7 @@ body {
 $servername = "localhost";
 $username = "root";
 $password = "abc";
-$dbname = "loginsigniin";
+$dbname = "abarrote";
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Verificar la conexión

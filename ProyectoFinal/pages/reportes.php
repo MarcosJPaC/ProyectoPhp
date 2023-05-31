@@ -41,7 +41,7 @@
     </header>
     <div class="l-navbar" id="nav-bar">
         <nav class="nav">
-            <div> <a href="%" class="nav_logo">  <span class="nav_logo-name">Tienda de abarrotes</span> </a>
+            <div> <a href="snippets.html" class="nav_logo">  <span class="nav_logo-name">Tienda de abarrotes</span> </a>
               <div class="nav_list"> <a href="snippets.html" class="nav_link"><i class="bi bi-house"></i>  <span class="nav_name">Inicio</span> </a> 
   
               <div class="nav_list"> <a href="productos.php" class="nav_link "> <i class="bi bi-bag-check"></i> <span class="nav_name">Productos</span> </a> 
@@ -256,7 +256,101 @@ while ($colum = mysqli_fetch_array($result))
   <input class="btn btn-success" type="submit" value="Obtener reporte">
 </form>
               </div>
+              <style>
+html,
+body,
+.intro {
+  height: 100%;
+}
 
+table td,
+table th {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.mask-custom {
+  background: rgb(115, 87, 228);
+  border-radius: 2em;
+  backdrop-filter: blur(25px);
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+}
+</style>
+<?php
+$colum;
+$servername = "localhost";
+$username = "root";
+$password = "abc";
+$dbname = "abarrote";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+//$consulta= "SELECT * FROM producto where status =1";
+$consulta="Select * from producto WHERE status = 1";
+
+        $result = mysqli_query($conn,$consulta);
+  if(!$result) 
+  {
+      echo "No se ha podido realizar la consulta";
+  }
+echo'<section class="intro">
+  <div class="" >
+  <div class="mask d-flex align-items-center h-100">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <div class="card mask-custom">
+          <div class="card-body">
+            <div class="table-responsive">
+                  <table id="tablapedorra" class="table table-borderless text-white mb-0 bg-image h-100">
+                    <thead>
+                      <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Stock</th>
+                        <th scope="col">Area</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+
+                        ';
+                        
+                        //prueba cambio 
+
+while ($colum = mysqli_fetch_array($result))
+{
+                        
+                   echo ' </tr>
+                    </thead>
+                    <tbody>
+
+                      <tr>
+                        <td><h3> '.$colum ['nombre'].'</h3></td>
+                        <td><h3> '.$colum ['precio'].'  </h3></td>
+                        <td><h2>'.$colum ['stock'].'</h2></td>
+                        <td><h2>'.$colum ['area']. '</td><h2>
+                        
+                       
+                      </tr>   
+                    
+                    </tbody>';
+                }
+                
+                mysqli_close( $conn );
+                
+?>
+
+</table>
+              </section>
+              <div class="form-group">
+              <form action="../reportes/pdfProducto.php" method="post">
+<h3>Obtener el producto mas caro</h3>
+
+
+  <input class="btn btn-success" type="submit" value="Obtener reporte">
+</form>
+              </div>
     </div>
     
 

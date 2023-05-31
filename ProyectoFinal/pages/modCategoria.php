@@ -37,7 +37,7 @@
     </header>
     <div class="l-navbar" id="nav-bar">
         <nav class="nav">
-            <div> <a href="%" class="nav_logo">  <span class="nav_logo-name">Tienda de abarrotes</span> </a>
+            <div> <a href="snippets.html" class="nav_logo">  <span class="nav_logo-name">Tienda de abarrotes</span> </a>
               <div class="nav_list"> <a href="snippets.html" class="nav_link"><i class="bi bi-house"></i>  <span class="nav_name">Inicio</span> </a> 
   
               <div class="nav_list"> <a href="productos.php" class="nav_link "> <i class="bi bi-bag-check"></i> <span class="nav_name">Productos</span> </a> 
